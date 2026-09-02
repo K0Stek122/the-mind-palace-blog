@@ -1,4 +1,4 @@
-baseURL = "https://kostek.uk/the-mind-palace"
+baseURL = "https://kostek.uk/mind-palace"
 title = "The Mind Palace"
 defaultContentLanguage = "en"
 theme = "hello-friend-ng"
@@ -15,7 +15,7 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
   pagerSize = 10
 
 [permalinks]
-  posts = "/posts/:year/:month/:title/"
+  posts = "/posts/:year/:month/:slug/"
 
 [taxonomies]
   tag = "tags"
@@ -73,8 +73,8 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
 
   [params.logo]
     logoMark     = ">"
-    logoText     = "$ cd /the-mind-palace/"
-    logoHomeLink = "/the-mind-palace/"
+    logoText     = "$ cd /mind-palace/"
+    logoHomeLink = "/mind-palace/"
 
 [languages]
   [languages.en]
