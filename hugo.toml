@@ -1,0 +1,96 @@
+baseURL = "https://kostek.uk/the-mind-palace"
+title = "The Mind Palace"
+defaultContentLanguage = "en"
+theme = "hello-friend-ng"
+
+PygmentsCodeFences = true
+PygmentsStyle = "monokai"
+
+enableRobotsTXT = true
+enableEmoji = true
+
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
+
+[pagination]
+  pagerSize = 10
+
+[permalinks]
+  posts = "/posts/:year/:month/:title/"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  series = "series"
+
+# Table of contents: Heading 1 -> Heading 3
+[markup]
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 3
+    ordered = false
+  [markup.goldmark.renderer]
+    unsafe = true
+  # Preserve raw math source so KaTeX auto-render works reliably
+  [markup.goldmark.extensions.passthrough]
+    enable = true
+    [markup.goldmark.extensions.passthrough.delimiters]
+      block  = [['$$', '$$'], ['\[', '\]']]
+      inline = [['$', '$'],   ['\(', '\)']]
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+
+  description = "Notes, sketches, and half-finished thoughts."
+  keywords = ""
+  images = [""]
+
+  # Homepage subtitle (shown under the title) and <title>-tag subtitle
+  homeSubtitle = "Enjoy my thought process"
+  subtitle     = "Enjoy my thought process"
+
+  disableReadOtherPosts = false
+  enableThemeToggle = true
+  enableSharingButtons = true
+  enableReadingTime = true
+
+  # Enable LaTeX math (KaTeX) for every page/post
+  math = true
+
+  customCSS = []
+  customJS  = []
+
+  [params.author]
+    name = "kamilianos3"
+
+  [params.footer]
+    trademark = 2026
+    rss = true
+    copyright = true
+    author = true
+
+  [params.logo]
+    logoMark     = ">"
+    logoText     = "$ cd /the-mind-palace/"
+    logoHomeLink = "/the-mind-palace/"
+
+[languages]
+  [languages.en]
+    weight = 1
+    label = "English"
+    locale = "en-US"
+  [languages.en.params]
+    subtitle = "Enjoy my thought process"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "about/"
+
+  [[menu.main]]
+    identifier = "posts"
+    name       = "Posts"
+    url        = "posts/"
